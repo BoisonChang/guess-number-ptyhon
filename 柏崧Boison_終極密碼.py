@@ -11,11 +11,12 @@ def guess_number():
         guess = int(input("猜數字："))
         guesses += 1
         if guess < target:
-            print("太低了。")
+            print("Your answer is lower than final answer")
         elif guess > target:
-            print("太高了。")
+            print("Your answer is higher than final answer")
         else:
-            print(f"猜對了！數字是{target}，你猜了{guesses}次。")
+            print(
+                f"Congratulation! The answer is {target}. you take {guesses} rounds to get the answer!")
             break
 
 
